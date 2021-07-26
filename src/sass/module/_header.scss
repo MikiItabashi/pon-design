@@ -1,0 +1,30 @@
+.header {
+    background: transparent;
+    color: $white;
+    padding: rem(24) rem(15);
+    position: fixed;
+    z-index: $layer-header;
+    width: 100%;
+    height: rem(62);
+    transition: 0.3s;
+    @include mq('md') {
+        height: rem(65);
+        padding: rem(23) rem(30);
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: rem(124);
+        @include mq('md') {
+            width: rem(160);
+        }
+    }
+    &__nav {}
+    &__wrapper {}
+    // homeを過ぎたらヘッダーの色を変更
+    &.js-change-color {
+        background: #21054D;
+    }
+}

@@ -1,0 +1,19 @@
+.title {
+    color: $main;
+    text-align: center;
+    &__primary {
+        font-size: rem(30);
+        font-weight: $bold;
+        @include mq('md') {
+            font-size: rem(36);
+        }
+    }
+    &__secondary {
+        font-size: rem(11);
+        font-family: $second-font-family;
+    }
+    // 白文字
+    &--white {
+        color: #fff;
+    }
+}

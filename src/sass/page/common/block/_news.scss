@@ -1,0 +1,85 @@
+.news {
+    margin-top: rem(38);
+    @include mq('md') {
+        margin-top: rem(67);
+    }
+    &__wrapper {
+        @include mq('md') {
+            padding-left: rem(64);
+            display: flex;
+            justify-content: start;
+        }
+    }
+    &__head {
+        @include mq('md') {
+            text-align: left;
+            margin-right: rem(54);
+        }
+    }
+    &__items {
+        margin-top: rem(28);
+        @include mq('md') {
+            margin-top: rem(4);
+        }
+    }
+    &__item {
+        display: block;
+        &:not(:last-child) {
+            margin-bottom: rem(35);
+        }
+        @include mq('md') {
+            display: flex;
+            justify-content: start;
+            &:not(:last-child) {
+                margin-bottom: rem(16);
+            }
+        }
+        // margin-bottomがrem(25)の場合
+        &--mb25 {
+            &:not(:last-child) {
+                margin-bottom: rem(25);
+                @include mq('md') {
+                    margin-bottom: rem(15.3);
+                }
+            }
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: start;
+    }
+    &__date {
+        font-size: rem(15);
+        letter-spacing: 0.1em;
+    }
+    &__badge {
+        margin-left: rem(15);
+        font-size: rem(10);
+        // padding: rem(2);
+        width: rem(82);
+        height: rem(18);
+        line-height: rem(18);
+        background: #E8E8E8;
+        border-radius: rem(50);
+        text-align: center;
+        letter-spacing: 0;
+    }
+    &__text {
+        font-family: $second-font-family;
+        display: inline-block;
+        margin-top: rem(8);
+        font-size: rem(14);
+        // letter-spacing: -0.09em;
+        @include mq('md') {
+            margin-left: rem(20);
+            margin-top: 0;
+        }
+    }
+    // ニュース一覧の場合
+    &.news-list {
+        @include mq('md') {
+            margin-top: rem(60);
+            margin-left: rem(10);
+        }
+    }
+}

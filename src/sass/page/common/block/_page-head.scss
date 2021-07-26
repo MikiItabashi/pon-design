@@ -1,0 +1,7 @@
+.page-head {
+    background: url(../images/hero.jpg) no-repeat center center / cover;
+    padding: rem(90) 0 rem(40);
+    @include mq('md') {
+        padding: rem(102) 0 rem(69);
+    }
+}

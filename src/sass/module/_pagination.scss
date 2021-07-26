@@ -1,0 +1,17 @@
+.pagination {
+    // text-align: center;
+    display: block;
+    margin: rem(40) 0 rem(81);
+    @include mq('md') {
+        margin: rem(40) 0 rem(107);
+    }
+    &__items {
+        display: flex;
+        justify-content: center;
+    }
+    &__list {
+        &:not(:last-child) {
+            margin-right: rem(10);
+        }
+    }
+}

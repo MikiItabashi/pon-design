@@ -1,0 +1,32 @@
+.hnav {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: rem(15);
+    font-weight: $bold;
+    letter-spacing: 0.06em;
+    &__list {
+        display: inline-block;
+        position: relative;
+        &:not(:last-child) {
+            margin-right: rem(24);
+        }
+    }
+    &__link {
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: rem(-5.5);
+            left: 0;
+            width: 0%;
+            height: rem(1);
+            background: $white;
+            transition: .3s;
+        }
+        &:hover {
+            opacity: 1;
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}

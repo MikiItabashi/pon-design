@@ -1,0 +1,55 @@
+.works {
+    margin-top: rem(97);
+    @include mq('md') {
+        margin: rem(140) rem(90) rem(60);
+    }
+    &__wrapper {
+        @include mq('md') {
+            display: flex;
+            justify-content: space-between;
+            // padding: rem(60) 0 rem(81);
+            position: relative;
+            // background: pink;
+            // height: rem(651);
+        }
+    }
+    &__swiper {
+        @include mq('md') {
+            position: absolute;
+            padding: rem(60) 0 rem(81);
+            width: 60%;
+            content: "";
+            left: 0;
+            z-index: $layer-default + 1;
+        }
+    }
+    &__content {
+        background: #F0F0F0;
+        margin-top: rem(-155);
+        padding-top: rem(161);
+        padding-bottom: rem(60);
+        @include mq('md') {
+            padding-left: 21.875rem;
+            padding-right: rem(60);
+            padding-top: rem(210);
+            height: rem(651);
+            margin: 0 0 0 auto;
+            width: 116rem;
+            z-index: $layer-default;
+        }
+    }
+    &__head {}
+    &__body {
+        text-align: center;
+    }
+    &__text {
+        margin-top: rem(29);
+        font-family: $second-font-family;
+    }
+    &__btn {
+        margin-top: rem(25);
+        @include mq('md') {
+            margin-top: rem(29);
+        }
+    }
+}

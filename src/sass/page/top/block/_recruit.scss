@@ -1,0 +1,38 @@
+.recruit {
+    margin: 0 0 rem(80);
+    @include mq('md') {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        margin: rem(65) 0 rem(100);
+    }
+    &__img {
+        img {
+            height: rem(140);
+            object-fit: cover;
+            @include mq('md') {
+                width: rem(665);
+                height: rem(340);
+            }
+        }
+    }
+    &__wrapper {
+        padding: rem(56) 0 rem(50);
+        background: #F7F7F7;
+        @include mq('md') {
+            padding: rem(68) rem(122);
+        }
+    }
+    &__title {}
+    &__body {
+        padding-top: rem(29);
+        text-align: center;
+    }
+    &__text {
+        font-family: $second-font-family;
+        white-space: nowrap;
+    }
+    &__btn {
+        margin-top: rem(25);
+    }
+}

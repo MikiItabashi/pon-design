@@ -1,0 +1,14 @@
+.swiper- {
+    &container {}
+    &wrapper {}
+    &slide {
+        padding-bottom: rem(35);
+    }
+    &pagination {
+        text-align: right;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background: $main;
+}

@@ -1,0 +1,21 @@
+/* FontFamily */
+
+$base-font-family: "Montserrat",
+"メイリオ",
+"Meiryo",
+sans-serif;
+$second-font-family: "Hiragino Sans",
+"Noto Sans JP",
+"メイリオ",
+"Meiryo",
+sans-serif;
+body {
+    font-family: $base-font-family;
+}
+
+
+/* font-weight */
+
+$regular: 300;
+$normal: 400;
+$bold: 700;

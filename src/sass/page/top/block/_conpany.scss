@@ -1,0 +1,54 @@
+.company {
+    padding: rem(79) 0 rem(126);
+    background: url(../images/sp_bg-circle.png) no-repeat center center / cover;
+    @include mq('md') {
+        padding: rem(133) 0 rem(73);
+        margin: 0 rem(75);
+        background: url(../images/bg-circle.png) no-repeat center center / contain, url(../images/bg-face.png) no-repeat bottom 3.4rem center / contain;
+    }
+    &__title {}
+    &__body {
+        text-align: center;
+        margin-top: rem(22);
+        @include mq('md') {
+            margin-top: rem(30);
+        }
+    }
+    &__lead {
+        font-family: $second-font-family;
+        font-size: rem(32);
+        line-height: (48 / 32);
+        font-weight: $regular;
+        display: inline-block;
+        @include mq('md') {
+            font-size: rem(40);
+            line-height: (32 / 40);
+            padding: rem(14) rem(20);
+            background: linear-gradient(to bottom, transparent 61%, #F5F534 75%, transparent 88%);
+        }
+    }
+    &__lead-span {
+        padding: 0 rem(6);
+        background: linear-gradient(to bottom, transparent 61%, #F5F534 75%, transparent 88%);
+        @include mq('md') {
+            padding: 0;
+            background: none;
+        }
+    }
+    &__text {
+        font-family: $second-font-family;
+        margin-top: rem(31);
+        line-height: (25 / 14);
+        // letter-spacing: -0.1em;
+        @include mq('md') {
+            margin-top: rem(35);
+        }
+    }
+    &__btn {
+        margin-top: rem(21);
+        text-align: center;
+        @include mq('md') {
+            margin-top: rem(30);
+        }
+    }
+}

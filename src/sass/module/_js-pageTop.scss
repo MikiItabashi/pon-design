@@ -1,0 +1,19 @@
+.js-pageTop {
+    position: fixed;
+    bottom: rem(30);
+    right: rem(30);
+    width: rem(50);
+    height: rem(50);
+    font-size: rem(30);
+    background: #391E88;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: rem(50);
+    font-size: rem(20);
+    z-index: $layer-up;
+    @include mq('md') {
+        bottom: rem(45);
+        right: rem(45);
+    }
+}

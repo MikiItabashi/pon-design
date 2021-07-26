@@ -1,0 +1,63 @@
+.service {
+    margin-top: rem(69);
+    @include mq('md') {
+        margin-top: rem(133);
+    }
+    &__wrapper {
+        padding: 0 rem(20);
+        margin: 0 auto;
+        @include mq('md') {
+            padding: 0 rem(165);
+        }
+    }
+    &__head {}
+    &__items {
+        margin-top: rem(30);
+        @include mq('md') {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: rem(44);
+        }
+        @include mq('md') {
+            width: calc((100% - 30px * 2) / 3);
+            &:not(:last-child) {
+                margin-bottom: 0;
+                margin-right: rem(30);
+            }
+        }
+    }
+    &__img {}
+    &__body {
+        text-align: center;
+        margin-top: rem(12);
+        @include mq('md') {
+            margin-top: rem(22);
+        }
+    }
+    &__title {
+        font-size: rem(18);
+        font-weight: $bold;
+        line-height: (22 / 18);
+        // letter-spacing: -.08em;
+    }
+    &__text {
+        margin-top: rem(7);
+        font-weight: $regular;
+        font-family: $second-font-family;
+        // letter-spacing: -.08em;
+        @include mq('md') {
+            margin-top: rem(17);
+        }
+    }
+    &__btn {
+        text-align: center;
+        margin-top: rem(25);
+        @include mq('md') {
+            margin-top: rem(30);
+        }
+    }
+}

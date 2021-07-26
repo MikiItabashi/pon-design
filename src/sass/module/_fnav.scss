@@ -1,0 +1,25 @@
+.fnav {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: rem(12);
+    font-weight: $bold;
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+    @include mq('md') {
+        justify-content: center;
+        letter-spacing: 0.2em;
+    }
+    &__list {
+        display: inline-block;
+        padding-top: rem(18);
+        &:not(:last-child) {
+            margin-right: rem(20);
+            @include mq('md') {
+                margin-right: rem(29);
+            }
+        }
+    }
+}
+
+// HOMEをPCで非表示にするためのimport。こういうのあり？
+@import "../setting/hidden";
